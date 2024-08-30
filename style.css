@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid grey;
+}
+
+.nav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-line {
+  height: 2px;
+  width: 20px;
+  margin: 5px 0;
+  background-color: grey;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 150px;
+  background-image: url(/images/hero.jpg);
+  background-position: center;
+  background-size: cover;
+
+  min-height: 80vh;
+  /* margin-top: 20px; */
+  position: relative;
+  z-index: -2;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+.hero-img img {
+  width: 300px;
+}
+
+.hero-one h1 {
+  margin-left: 40px;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hero-one p {
+  color: rgba(82, 238, 9, 0.703);
+  margin-left: 50px;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.hero-one button {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  margin-left: 500px;
+  margin-top: 50px;
+}
+
+.Register a {
+  color: white;
+}
+
+.fhittness h1 {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.fhittness p {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.fhittness h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.steps img {
+  width: 300px;
+  margin-top: 40px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-fit {
+  background-color: grey;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.container-fit h1 {
+  text-align: center;
+}
+
+.container-one {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+  /* border: 1px solid green; */
+
+  border-radius: 20px;
+}
+
+.container-one .main {
+  text-align: center;
+  border: 1px solid blue;
+}
+
+.classes {
+  margin-top: 30px;
+}
+
+.classes-two {
+  margin-top: 40px;
+}
+
+.classes-three {
+  margin-top: 30px;
+}
+
+.classes-four {
+  margin-top: 30px;
+}
+
+.classes-five {
+  margin-top: 40px;
+}
+
+.classes-six {
+  margin-top: 30px;
+}
+
+.container-three {
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.private {
+  text-align: center;
+}
+
+.clusive {
+  margin-top: 20px;
+}
+
+.container-three h5 {
+  margin-top: 40px;
+}
+
+.container-three p {
+  margin-top: 20px;
+}
+
+.footer {
+  background-color: gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.footer h3 {
+  margin-top: 20px;
+}
+
+.footer p {
+  margin-top: 20px;
+}
+
+.footer-one img {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.footer-two {
+  margin-left: 30px;
+}
+
+.footer-two li {
+  margin-top: 10px;
+}
+
+.footer-three {
+  margin-left: 30px;
+}
+
+.footer-three li {
+  margin-top: 10px;
+}
+.footer-four {
+  margin-left: 30px;
+}
+
+.footer-four li {
+  margin-top: 20px;
+}
+
+@media all and (max-width: 700px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    position: relative;
+  }
+
+  .nav h2 {
+    font-size: 15px;
+  }
+
+  .nav .nav-link {
+    display: none;
+    margin-top: 20px;
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    cursor: pointer;
+  }
+
+  .nav .active {
+    display: flex;
+  }
+
+  .hero-one h1 {
+    margin-left: 5px;
+    font-weight: lighter;
+    font-size: 20px;
+  }
+
+  .hero-one p {
+    font-size: 20px;
+  }
+
+  .hero-one button {
+    margin-left: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-fit {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-one img {
+    width: 20px;
+  }
+}
